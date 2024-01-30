@@ -7,8 +7,8 @@ RUN yarn install
 
 COPY public/ public/
 COPY src/ src/
-COPY .env tsconfig.json /em-mallard/
+COPY .env.local .env.test tsconfig.json /em-mallard/
 
 EXPOSE 3000
 
-CMD [ "yarn", "build" ]
+CMD [ "yarn", "start" ]
