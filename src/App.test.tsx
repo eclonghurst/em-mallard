@@ -20,13 +20,18 @@ const mockGetUser = [
       data: {
         users: [
           {
+            id: 1,
             name: 'Joe Bloggs',
             email: 'JoeBloggs@example.com',
             posts: [
-              { title: 'First post', body: 'This is my first ever post!' },
+              {
+                title: 'First post',
+                body: 'This is my first ever post!',
+              },
             ],
           },
           {
+            id: 2,
             name: 'Mariah Carey',
             email: 'MariahCarey@example.com',
             posts: [
@@ -34,10 +39,7 @@ const mockGetUser = [
                 title: 'Christmas Hits',
                 body: 'All I want for Christmas',
               },
-              {
-                title: 'Christmas Hits 2',
-                body: 'Is you',
-              },
+              { title: 'Christmas Hits 2', body: 'Is you' },
             ],
           },
         ],
