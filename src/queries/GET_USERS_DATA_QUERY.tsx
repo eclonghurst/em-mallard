@@ -2,6 +2,7 @@ import gql from 'graphql-tag';
 import { useQuery } from '@apollo/client';
 import React from 'react';
 import profileSvg from '../images/profile_photo.svg';
+import { Box } from '@sky-uk/ui-core';
 
 interface Post {
   title: string;
@@ -38,7 +39,7 @@ export default function DisplayUsers() {
   return (
     <React.Fragment>
       {data.users.map(({ name, email, posts }: User) => (
-        <div key={name} className="user-container">
+        <Box key={name} className="user-container">
           <h2>{name}</h2>
           <img src={profileSvg} className="profile-svg" width="100px" alt="" />
           <h3 className="email">@: {email}</h3>
@@ -51,7 +52,7 @@ export default function DisplayUsers() {
               </div>
             ))}
           </div>
-        </div>
+        </Box>
       ))}
     </React.Fragment>
   );

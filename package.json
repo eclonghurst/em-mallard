@@ -5,6 +5,8 @@
   "dependencies": {
     "@apollo/client": "^3.8.9",
     "@contentchef/contentchef-node": "^6.0.0",
+    "@sky-uk/skycons": "3.1.0",
+    "@sky-uk/ui-core": "^6.1.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "styled-components": "6.1.8",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

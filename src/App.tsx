@@ -2,6 +2,7 @@ import './App.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import DisplayUsers from './queries/GET_USERS_DATA_QUERY';
 import { Header } from './contentChef/contentChef';
+import { GlobalReset } from '@sky-uk/ui-core';
 import React from 'react';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <GlobalReset />
       <ApolloProvider client={client}>
         <div className="App">
           <div className="app-header">
