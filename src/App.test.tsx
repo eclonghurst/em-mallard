@@ -6,9 +6,7 @@ import DisplayUsers, {
   GET_USERS_DATA_QUERY,
 } from './queries/GET_USERS_DATA_QUERY';
 import { MockedProvider } from '@apollo/client/testing';
-import gql from 'graphql-tag';
 import { Header } from './contentChef/contentChef';
-// import { mockGetUser } from '../src/mocks/mockGetUser';
 
 const mockGetUser = [
   {
